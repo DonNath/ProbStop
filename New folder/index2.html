@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Registration Form</title>
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="/submit" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your full name.." required>
+  
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+    <label for="height">Enter Height</label>
+    <input type="text" id="height" name="height" placeholder="Full height in cm" required>
+
+    <div class="gender-details">
+      <span class="gender-title">Gender</span>
+      <div class="category">
+        <label for="">
+          <input type="radio"></input>
+          <span class="gender">Male</span>
+        </label>
+        <label for="">
+          <input type="radio"></input>
+          <span class="gender">Female</span>
+        </label>
+        <label for="">
+          <input type="radio"></input>
+          <span class="gender">Prefer not to say</span>
+        </label>
+      </div>
+
+
+    <label for="p">Password</label>
+    <input type="password" id="password" name="password" placeholder="Your password..." required>
+
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html>
